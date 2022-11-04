@@ -16,4 +16,6 @@ Memory consumption is really low, so that problem is tacked. But that single com
 
 ## MultipleMultipleGrainScene
 If one component with 1000 of grains is taking too long to simulate all grains in 20ms, how about if we use 10 components with 100 grains? of 100 components of 100 grains?
+The MultipleMultipleGrainScene shows that running 1000 grains this way is definitely faster than in the MultipleGrainScene, but running 5000 grains is too much again.
+The problem lies with adding the rectangles to the scene every frame, which just takes a lot of time. Doing it in parallel helps, but there's an upper limit of how much you can draw in a certain (small) time.
 
