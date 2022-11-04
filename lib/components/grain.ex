@@ -17,7 +17,7 @@ defmodule ScenicSand.Components.Grain do
     PubSub.subscribe(:frame)
     SandField.init_grain(sand_field, {x, y})
 
-      graph = draw_grain(@graph, x, y)
+    graph = draw_grain(@graph, x, y)
 
     scene =
       scene

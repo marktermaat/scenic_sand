@@ -8,7 +8,7 @@ config :scenic_sand, :viewport,
   name: :main_viewport,
   size: {800, 600},
   theme: :dark,
-  default_scene: ScenicSand.Scene.SingleGrainScene,
+  default_scene: ScenicSand.Scene.MultipleGrainScene,
   drivers: [
     [
       module: Scenic.Driver.Local,
